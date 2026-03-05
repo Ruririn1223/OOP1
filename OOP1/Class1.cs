@@ -2,12 +2,12 @@
 
 public class BankAccount
 {
-    private string _accountNumber;
-    private string _ownerName;
-    private decimal _balance;
-    private decimal _interestRate;
+    private string _accountNumber { get; set; }
+    private string _ownerName { get; set; }
+	private decimal _balance { get; set; }
+	private decimal _interestRate { get; set; }
 
-    public BankAccount(string accountNumber, string ownerName, decimal initialBalance = 0, decimal interestRate = 0)
+	public BankAccount(string accountNumber, string ownerName, decimal initialBalance = 0, decimal interestRate = 0)
     {
         _accountNumber = accountNumber;
         _ownerName = ownerName;
